@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+header {
+  background: #f3f5fc;
+}
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 0 0 30px 30px;
+}
+
+.title-container h1 {
+  background-color: #ffffff;
+  color: #0a3871;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.social-media a {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+.social-media a:hover {
+  color: #1fb6ff;
+}
+.container {
+  position: relative;
+  height: 100vh;
+  background: #f3f5fc;
+}
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+  position: absolute;
+  left: 40px;
+}
+.alura-logo {
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background-color: #ffffff;
+}
+
+.text-input {
+  position: absolute;
+  width: 42%;
+  height: 60%;
+  left: 12%;
+  top: 15%;
+  border: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  background-color: #f3f5fc;
+}
+
+.text-input::placeholder {
+  color: #0a3871;
+}
+
+.text-input:focus,
+.text-input:active {
+  border: none;
+  outline: none;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  position: absolute;
+  width: 80%;
+  left: 12%;
+  top: 80%;
+}
+
+.info-box p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #495057;
+  opacity: 0.8;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  position: absolute;
+  width: 680px;
+  height: 67px;
+  left: 140px;
+  bottom: 40px;
+}
+
+.encrypt-button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 8px;
+  width: 328px;
+  height: 67px;
+  background: #0a3871;
+  border-radius: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+  justify-content: center;
+}
+
+.decrypt-button {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 8px;
+  width: 328px;
+  height: 67px;
+  background: #d8dfe8;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #0a3871;
+  justify-content: center;
+}
+
+.decrypt-button:hover,
+.encrypt-button:hover {
+}
+
+.encripted-section > *,
+.encripted-message > * {
+  background: #fff;
+}
+.encripted-section {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 400px;
+  right: 40px;
+  top: 40px;
+  bottom: 40px;
+  background: #fff;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+}
+
+.encripted-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  gap: 16px;
+  position: absolute;
+  top: 65%;
+  text-align: center;
+}
+
+.encripted-message h2 {
+  width: 60%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #343a40;
+}
+
+.encripted-message p {
+  width: 80%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #495057;
+}
+
+.encripted-section img {
+  position: absolute;
+  width: 80%;
+  height: 50%;
+  top: 15%;
+}
+
+/* Responsive design */
+@media (max-width: 57.5em) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .encriptar-section {
+    width: 100%;
+  }
+  .text-input {
+    width: 80%;
+    height: 60%;
+    left: 10%;
+    top: 15%;
+  }
+  .info-box {
+    width: 80%;
+    left: 10%;
+    top: 67%;
+  }
+  .info-box p {
+    font-size: 16px;
+  }
+  .buttons-container {
+    width: 80%;
+    left: 10%;
+    top: 70%;
+  }
+  .encrypt-button,
+  .decrypt-button {
+    width: 48%;
+    border-radius: 16px;
+  }
+  .encrypt-button:hover,
+  .decrypt-button:hover {
+    margin: 0.3%;
+    width: 47.5%;
+    padding: 1.8%;
+  }
+  .encripted-section {
+    width: 80%;
+    height: 15%;
+    left: 10%;
+    top: 80%;
+  }
+  .encripted-message {
+    width: 100%;
+    top: 5%;
+  }
+  .encripted-section img {
+    top: 0;
+    display: none;
+    visibility: hidden;
+  }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Texto</title>
+    <link rel="shortcut icon" href="assets/aluraLogo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=UnifrakturMaguntia&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-LdGyVF2eM4z0EN4db4jJLpZ0sLpxrJgC9tPgPvkIowjeWbD8+dYDaLl7fBYZvI/HWQz8ItRtuM9Q5JjydlxW7g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="title-container">
+        <div class="logo-container">
+          <img src="assets/aluraLogo.png" alt="alura-logo" class="alura-logo" />
+        </div>
+        <h1>Encriptador de Texto</h1>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="encriptar-section">
+          <textarea
+            name="texto"
+            class="text-input"
+            id="texto"
+            cols="30"
+            rows="10"
+            placeholder="Ingresa el texto aquí"
+          ></textarea>
+
+          <div class="info-box">
+            <p class="info-text">Solo letras minúsculas y sin acentos.</p>
+          </div>
+          <div class="buttons-container">
+            <button
+              class="button encrypt-button"
+              type="button"
+              onclick="encriptar()"
+            >
+              Encriptar
+            </button>
+            <button
+              class="button decrypt-button"
+              type="button"
+              onclick="desencriptar()"
+            >
+              Desencriptar
+            </button>
+          </div>
+        </div>
+        <div class="encripted-section">
+          <img src="assets/muñeco.png" alt="" class="muñeco-img" />
+          <div class="encripted-message" id="mensaje-encriptado">
+            <h2 class="message-title">Ningún mensaje fue encontrado</h2>
+            <p class="message-text">
+              Ingresa el texto que deseas encriptar o desencriptar
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="social-media">
+        <a href="https://github.com/bramireza" target="_blank">
+          <i class="fab fa-github"></i>GitHub
+        </a>
+        <a
+          href="https://www.linkedin.com/in/brayian-ramirez-aguayo/"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin"></i>LinkedIn
+        </a>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

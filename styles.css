@@ -36,6 +36,18 @@ footer {
 .social-media a:hover {
   color: #1fb6ff;
 }
+.social-text {
+  padding-bottom: 20px;
+  font-family: "Inter";
+  font-size: 18px;
+}
+.copyright {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 18px;
+  margin-bottom: 0;
+  font-family: "Inter";
+}
 .container {
   position: relative;
   height: 100vh;

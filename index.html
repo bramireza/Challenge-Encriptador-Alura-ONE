@@ -26,11 +26,9 @@
       <div class="container">
         <div class="encriptar-section">
           <textarea
-            name="texto"
+            name="text"
             class="text-input"
-            id="texto"
-            cols="30"
-            rows="10"
+            id="text-input"
             placeholder="Ingresa el texto aquí"
           ></textarea>
 
@@ -41,21 +39,29 @@
             <button
               class="button encrypt-button"
               type="button"
-              onclick="encriptar()"
+              onclick="encrypt()"
             >
               Encriptar
             </button>
             <button
               class="button decrypt-button"
               type="button"
-              onclick="desencriptar()"
+              onclick="decrypt()"
             >
               Desencriptar
             </button>
           </div>
         </div>
         <div class="encripted-section">
-          <img src="assets/muñeco.png" alt="" class="muñeco-img" />
+          <div class="result-container">
+            <textarea
+              name="text-result"
+              class="text-result"
+              id="text-result"
+              disabled
+            ></textarea>
+          </div>
+          <img src="assets/munieco.png" alt="" class="munieco-img" />
           <div class="encripted-message" id="mensaje-encriptado">
             <h2 class="message-title">Ningún mensaje fue encontrado</h2>
             <p class="message-text">
@@ -82,6 +88,6 @@
       </div>
       <p class="copyright">Hecho por Brayian Ramírez © 2023</p>
     </footer>
-    <script src="index.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

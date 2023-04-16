@@ -4,10 +4,11 @@
 <br />
 <div align="center">
   
-  <a href="#" ><img src="assets/aluraLogo.png" alt="Logo" width="80" height="80"></a>
-
-  <h2 align="center">Ver Demo</h2>
-
+  <a href="google.com">
+    <img src="assets/aluraLogo.png" alt="Logo">
+  </a>
+  <h3 align="center"><a href="google.com">Ver Demo</a></h2>
+<br />
   </p>
 </div>
 

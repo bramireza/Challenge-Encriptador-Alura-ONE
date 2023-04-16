@@ -95,7 +95,8 @@ copyButton.addEventListener("click", () => {
       console.log("Something went wrong", err);
     });
   // Cambiar el texto del botón de "Copiar" a "¡Copiado!"
-  copyButton.innerText = "¡Copiado!";
+  copyButton.innerHTML =
+    '<i class="icon ion-ios-copy-outline"></i> COPIADO <i class="icon ion-ios-copy-outline">';
   // Volver a cambiar el texto del botón después de 2 segundos
   setTimeout(() => {
     copyButton.innerText = "Copiar";

@@ -320,9 +320,6 @@ footer {
     width: 48%;
     border-radius: 16px;
   }
-  .encrypt-button:hover,
-  .decrypt-button:hover {
-  }
   .encripted-section {
     width: 80%;
     height: 15%;

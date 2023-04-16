@@ -98,6 +98,7 @@ footer {
   line-height: 150%;
   resize: none;
   background-color: #fff;
+  color: #0a3871;
 }
 
 .text-input::placeholder {
@@ -149,26 +150,8 @@ footer {
 }
 
 .encrypt-button {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 24px;
-  gap: 8px;
-  width: 328px;
-  height: 67px;
-  background: #0a3871;
-  border-radius: 24px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  color: #ffffff;
-  justify-content: center;
-}
-
-.decrypt-button {
+  position: relative;
+  cursor: pointer;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -177,7 +160,31 @@ footer {
   gap: 8px;
   width: 328px;
   height: 67px;
-  background: #d8dfe8;
+  background: #0a3871;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #f3f5fc;
+  justify-content: center;
+}
+
+.decrypt-button {
+  position: relative;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 8px;
+  width: 328px;
+  height: 67px;
+  background: #f3f5fc;
   border: 1px solid #0a3871;
   border-radius: 24px;
   font-family: "Inter";
@@ -189,9 +196,36 @@ footer {
   color: #0a3871;
   justify-content: center;
 }
+.copy-button {
+  position: absolute;
+  bottom: 20px;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 8px;
+  width: 328px;
+  height: 67px;
+  background: #f3f5fc;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #0a3871;
+  justify-content: center;
+  display: none;
+}
 
 .decrypt-button:hover,
 .encrypt-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .encripted-section > *,
@@ -287,9 +321,6 @@ footer {
   }
   .encrypt-button:hover,
   .decrypt-button:hover {
-    margin: 0.3%;
-    width: 47.5%;
-    padding: 1.8%;
   }
   .encripted-section {
     width: 80%;
@@ -298,7 +329,6 @@ footer {
     top: 80%;
   }
   .encripted-message {
-    width: 100%;
     top: 5%;
   }
   .encripted-section img {

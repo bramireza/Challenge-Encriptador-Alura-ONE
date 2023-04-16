@@ -1,11 +1,16 @@
+// Obtiene los elementos de entrada y salida de mensaje
+const textInput = document.querySelector(".text-input");
+const textResult = document.querySelector(".text-result");
+// Obtiene la imagen del muñeco, los elementos del mensaje y el boton copiar.
+const muniecoImg = document.querySelector(".munieco-img");
+const messageTitle = document.querySelector(".message-title");
+const messageText = document.querySelector(".message-text");
+const copyButton = document.querySelector(".copy-button");
+
 // Esta función se encarga de procesar el mensaje. Toma como argumento una función procesadora que será aplicada sobre el mensaje actual.
 function processMessage(processor) {
-  // Obtener el mensaje actual, la imagen del muñeco, los elementos del mensaje, y el resultado del texto.
-  let currentMessage = document.querySelector(".text-input").value;
-  let muniecoImg = document.querySelector(".munieco-img");
-  let messageTitle = document.querySelector(".message-title");
-  let messageText = document.querySelector(".message-text");
-  let textResult = document.querySelector(".text-result");
+  // Se obtiene el mensaje actual.
+  let currentMessage = textInput.value;
 
   // Aplicar la función procesadora al mensaje actual.
   let processedMessage = processor(currentMessage);
@@ -17,12 +22,16 @@ function processMessage(processor) {
     messageText.textContent = "";
     // Esconder la imagen del muñeco.
     muniecoImg.style.display = "none";
+    // Mostrar el boton copiar
+    copyButton.style.display = "block";
     // Mostrar el mensaje procesado en el campo de resultado.
     textResult.value = processedMessage;
   } else {
     // Si el mensaje actual está vacío:
     // Mostrar la imagen del muñeco.
-    muniecoImg.style.display = "";
+    muniecoImg.style.display = "block";
+    // Ocultar el boton copiar
+    copyButton.style.display = "none";
     // Mostrar un título y texto que indiquen que el usuario debe ingresar un mensaje.
     messageTitle.textContent = "Ningún mensaje fue encontrado";
     messageText.textContent =
@@ -57,3 +66,24 @@ function decrypt() {
       .replace(/ufat/gi, "u");
   });
 }
+
+copyButton.addEventListener("click", () => {
+  // Seleccionar el texto encriptado
+
+  // Copiar el texto seleccionado al portapapeles
+
+  navigator.clipboard
+    .writeText(textResult.value)
+    .then(() => {
+      console.log("Text copied to clipboard...");
+    })
+    .catch((err) => {
+      console.log("Something went wrong", err);
+    });
+  // Cambiar el texto del botón de "Copiar" a "¡Copiado!"
+  copyButton.innerText = "¡Copiado!";
+  // Volver a cambiar el texto del botón después de 2 segundos
+  setTimeout(() => {
+    copyButton.innerText = "Copiar";
+  }, 2000);
+});

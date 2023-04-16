@@ -4,10 +4,10 @@
 <br />
 <div align="center">
   
-  <a href="google.com">
+  <a href="https://bramireza.github.io/Challenge-Encriptador-Alura-ONE/">
     <img src="assets/aluraLogo.png" alt="Logo">
   </a>
-  <h3 align="center"><a href="google.com">Ver Demo</a></h2>
+  <h3 align="center"><a href="https://bramireza.github.io/Challenge-Encriptador-Alura-ONE/">Ver Demo</a></h2>
 <br />
   </p>
 </div>
@@ -58,15 +58,15 @@ Example:
 
 ### Laptop
 
-[![Laptop Screen Shot][laptop-screenshot]](https://example.com)
+[![Laptop Screen Shot][laptop-screenshot]](https://bramireza.github.io/Challenge-Encriptador-Alura-ONE/)
 
 ### Tablet
 
-[![Tablet Screen Shot][tablet-screenshot]](https://example.com)
+[![Tablet Screen Shot][tablet-screenshot]](https://bramireza.github.io/Challenge-Encriptador-Alura-ONE/)
 
 ### Movil
 
-[![Movil Screen Shot][movil-screenshot]](https://example.com)
+[![Movil Screen Shot][movil-screenshot]](https://bramireza.github.io/Challenge-Encriptador-Alura-ONE/)
 
 ## Contact
 

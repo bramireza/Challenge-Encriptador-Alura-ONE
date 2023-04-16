@@ -1,10 +1,21 @@
 <h1 align="center"> Challenge-Encriptador-Alura-ONE </h1>
 
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  
+  <a href="#" ><img src="assets/aluraLogo.png" alt="Logo" width="80" height="80"></a>
+
+  <h2 align="center">Ver Demo</h2>
+
+  </p>
+</div>
+
 # About The Project
 
 Welcome to our first encryption challenge!
 
-During these four weeks, we will be working on an application that encrypts texts, so you can exchange secret messages with other people who know the encryption used.
+We will be working on an application that encrypts texts, so you can exchange secret messages with other people who know the encryption used.
 
 ## Functionality
 
@@ -55,6 +66,14 @@ Example:
 ### Movil
 
 [![Movil Screen Shot][movil-screenshot]](https://example.com)
+
+## Contact
+
+Brayian Ramírez - [@brayian-ramirez-aguayo](https://www.linkedin.com/in/brayian-ramirez-aguayo/) - bramirezag@gmail.com
+
+Project Link: [https://github.com/bramireza/Challenge-Encriptador-Alura-ONE](https://github.com/bramireza/Challenge-Encriptador-Alura-ONE)
+
+#challengeonecodificador5
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->

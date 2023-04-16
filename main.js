@@ -6,7 +6,23 @@ const muniecoImg = document.querySelector(".munieco-img");
 const messageTitle = document.querySelector(".message-title");
 const messageText = document.querySelector(".message-text");
 const copyButton = document.querySelector(".copy-button");
+const alertText = document.querySelector(".info-text");
 
+// Esta función se encarga de validar la entrada del mensaje a encriptar a desenecriptar, dejando solo digitar letras minusculas y sin acentos
+function validarTexto(e) {
+  const caracter = e.key;
+  const regex = /^[a-z\s]*$/;
+
+  // Si el caracter no forma parte del regex entonces no deja digitarlo
+  if (!regex.test(caracter)) {
+    e.preventDefault();
+    // Alerta se pinta de rojo
+    alertText.style.color = "red";
+  } else {
+    // Alerta vuleve a color gris
+    alertText.style.color = "#495057";
+  }
+}
 // Esta función se encarga de procesar el mensaje. Toma como argumento una función procesadora que será aplicada sobre el mensaje actual.
 function processMessage(processor) {
   // Se obtiene el mensaje actual.
@@ -68,9 +84,7 @@ function decrypt() {
 }
 
 copyButton.addEventListener("click", () => {
-  // Seleccionar el texto encriptado
-
-  // Copiar el texto seleccionado al portapapeles
+  // Copiar el texto encriptado o desencriptado al portapapeles
 
   navigator.clipboard
     .writeText(textResult.value)

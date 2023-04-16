@@ -30,10 +30,14 @@
             class="text-input"
             id="text-input"
             placeholder="Ingresa el texto aquí"
+            onkeypress="validarTexto(event)"
           ></textarea>
 
           <div class="info-box">
-            <p class="info-text">Solo letras minúsculas y sin acentos.</p>
+            <p class="info-text">
+              <i class="icon ion-android-alert"></i> Solo letras minúsculas y
+              sin acentos.
+            </p>
           </div>
           <div class="buttons-container">
             <button
